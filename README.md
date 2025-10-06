@@ -99,6 +99,33 @@ Host your own instance of anime-api on Render.
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/itzzzme/anime-api)
 
+### Cloudflare Workers
+
+Host your own instance of anime-api on Cloudflare Workers.
+
+1. Install Wrangler CLI globally:
+```bash
+npm install -g wrangler
+```
+
+2. Authenticate with Cloudflare:
+```bash
+wrangler auth login
+```
+
+3. Update `wrangler.toml` with your account ID and zone information.
+
+4. Build and deploy:
+```bash
+npm run build-worker
+npm run deploy-worker
+```
+
+5. For local development:
+```bash
+npm run dev-worker
+```
+
 > # Documentation
 
 ### `GET` Home info
